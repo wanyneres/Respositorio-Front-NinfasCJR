@@ -29,7 +29,7 @@ export default function Login() {
 
       <div className = "w-2/5 min-w-100 bg-black rounded-t-[3rem] p-15 mr-25 mt-15"> 
       {/* usei rounded-t-[3rem] porque o maior raio padrão da documentação não chega perto da referência */}
-        <h2 className="text-center font-league text-3xl text-yellow-50 font-bold mb-10 mt-5">BEM VINDO DE VOLTA!</h2>
+        <h2 className="text-center font-league pt-1 text-4xl text-yellow-50 font-bold mb-10 mt-7">BEM VINDO DE VOLTA!</h2>
 
           <div>
             <label
@@ -40,7 +40,7 @@ export default function Login() {
               id = "email" 
               type = "text" 
               placeholder="E-mail" 
-              className="text-sm text-gray-500 font-league w-full p-2 pl-4 mb-6 bg-yellow-50 rounded-full">
+              className="text-lg text-gray-500 font-league w-full pt-1 p-1 pl-4 mb-6 bg-yellow-50 rounded-full">
             </input>
           </div>
 
@@ -53,23 +53,23 @@ export default function Login() {
               id = "password" 
               type = "text" 
               placeholder="Senha" 
-              className="text-sm text-gray-500 w-full p-2 pl-4 mb-4 bg-yellow-50 rounded-full">
+              className="text-lg text-gray-500 w-full p-1 pl-4 mb-4 bg-yellow-50 rounded-full">
             </input>  
           </div>
 
           <div className="w-full text-center pb-5">
             <a 
             href="INSIRA O LINK"
-            className="text-sm text-center font-light underline"
+            className="text-base text-center font-league font-extrathin underline"
             >Esqueceu sua senha?</a>
           </div>
 
           <div>
-            <button className="bg-violet-600 w-full rounded-full text-bold p-2 mb-4">ENTRAR</button>
+            <button className="bg-violet-600 text-yellow-50 text-lg w-full rounded-full font-semibold p-1 mb-4">ENTRAR</button>
           </div>
 
           <div>
-            <p className="text-yellow-50 ">
+            <p className="text-yellow-50 text-base">
                 Não possui uma conta?  
                 <a 
                   href="INSIRA O LINK" 
