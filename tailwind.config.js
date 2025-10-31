@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        league: ["var(--font-league-spartan)"]
+        league: ["var(--font-league)"],
       }
     },
   },
