@@ -1,5 +1,6 @@
 "use client"
 import React, {useState} from "react";
+//Usado para o unuário escolher como a senha será mostrada
 import Image from 'next/image';
 
 
@@ -51,7 +52,7 @@ export default function Login() {
             >Senha</label>
             <input
               id = "password" 
-              type = "text" 
+              type = "password" 
               placeholder="Senha" 
               className="text-lg text-gray-500 w-full p-1 pl-4 mb-4 bg-yellow-50 rounded-full hover:border-2 hover:border-grey">
             </input>  
