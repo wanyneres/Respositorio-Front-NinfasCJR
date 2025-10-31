@@ -1,12 +1,33 @@
 "use client"
 import React, {useState} from "react";
+import Image from 'next/image';
 
 
 export default function Login() {
   return (
   
-    <div className = "flex justify-end min-h-screen bg-yellow-50">
-      <div className = "w-2/5 min-w-100 bg-black rounded-t-[3rem] p-15 mr-15 mt-15"> 
+    <div className = "flex min-h-screen bg-yellow-50 justify-between">
+      {/* Uso justify-between porque é uma página com dois principais elementos,
+      o mascote na esquerda e o formulário na direita*/}
+      <div>
+        <div className="pl-50">
+          <Image 
+            width={250}
+            height={50}
+            src={"/images/logo.png"}
+            alt={"Logo da Stock.io"}></Image>
+        </div>
+
+        <div className="pl-50">
+          <Image 
+            width={350}
+            height={350}
+            src={"/images/stockles.png"}
+            alt={"Stockles, mascote da empreasa"}></Image>
+        </div>
+      </div>
+
+      <div className = "w-2/5 min-w-100 bg-black rounded-t-[3rem] p-15 mr-25 mt-15"> 
       {/* usei rounded-t-[3rem] porque o maior raio padrão da documentação não chega perto da referência */}
         <h2 className="text-center text-3xl text-color-yellow-50 font-bold mb-10 mt-5">BEM VINDO DE VOLTA!</h2>
 
