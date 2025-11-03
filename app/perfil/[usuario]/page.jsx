@@ -1,13 +1,30 @@
 "use client"
-import Image from 'next/image';
+import Image from "next/image";
+import BotaoPerfil from "../../components/mostrar_botao_edit_perfil";
 import CardProduto from "../../components/card_produto";
+import NavbarsPerfil from "../../components/mostrar_icone_user";
 
 export default function PaginaDePerfil() {
   return (
-    <main className="min-h-screen bg-yellow-50 flex flex-col pb-20">
-        <div className="w-full h-[357px] bg-black mt-[92px] flex flex-col justify-end relative z-0">
+    <main className="min-h-screen bg-yellow-50 flex flex-col">
+        <div className="w-full h-[449px] bg-black flex flex-col justify-between relative z-0">
+            <div className="w-full flex justify-between items-center px-6 lg:px-[115px] pt-8">
+                <Image 
+                width={221}
+                height={43}
+                src={"/images/logo2.svg"}
+                alt={"Logo da Stock.io branca"}/>
+
+                <div className="flex items-center gap-6">
+                    <Image src="/images/bag.svg" alt="Sacolinha da Navbar" width={30} height={30}/>
+                    <Image src="/images/lojinha.svg" alt="Lojinha da Navbar" width={30} height={30}/>
+                    <NavbarsPerfil />
+                    <Image src="/images/exit.svg" alt="Sair" width={30} height={30}/>
+                </div>
+            </div>
+
             <div className="w-full px-6 lg:px-[115px] pb-10">
-            <Image
+                <Image
                 className="dark:invert"
                 src="/images/seta_perfil.svg"
                 alt="seta perfil"
@@ -22,7 +39,7 @@ export default function PaginaDePerfil() {
             <div className="w-[230px] h-[230px] ml-0 lg:ml-[65px] bg-gray-200 rounded-full mt-[-150px] border-yellow-50 shrink-0"></div>
 
             <div className="mt-8">
-                <button type="button" className="bg-violet-600 text-yellow-50 text-lg w-[324px] h-[43px] rounded-full font-thin">Editar Perfil</button>
+                <BotaoPerfil />
             </div>
         </div>
 

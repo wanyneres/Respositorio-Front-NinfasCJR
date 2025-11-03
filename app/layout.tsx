@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, League_Spartan } from "next/font/google";
+import { ProvedorAutentic } from "../context/ContextoAutentic";
 import "./globals.css";
 
 const leagueSpartan = League_Spartan({
@@ -32,7 +33,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${leagueSpartan.variable} antialiased h-full`}
       >
-        {children}
+        <ProvedorAutentic>
+          {children}
+        </ProvedorAutentic>
       </body>
     </html>
   );
