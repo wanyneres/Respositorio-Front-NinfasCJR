@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, createContext } from "react";
+import { useState, createContext } from "react";
 
 export const ContextoAutentic = createContext();
 export function ProvedorAutentic({ children }) {
