@@ -2,6 +2,7 @@
 import React, {useState} from "react";
 //Usado para o unuário escolher como a senha será mostrada
 import Image from 'next/image';
+import PasswordField from "@/components/PasswordField";
 
 
 export default function Login() {
@@ -41,27 +42,26 @@ export default function Login() {
               id = "email" 
               type = "text" 
               placeholder="E-mail" 
-              className="text-lg text-gray-500 font-league w-full pt-1 p-1 pl-4 mb-6 bg-yellow-50 rounded-full hover:border-2 hover:border-grey">
+              className="text-lg text-gray-500 font-league w-full pt-1 p-1 pl-4 mb-6 bg-yellow-50 rounded-full focus:border-2 focus:border-grey">
             </input>
           </div>
 
           <div>
             <label
-            htmlFor = "email"
+            htmlFor = "Senha"
             className="sr-only" 
             >Senha</label>
-            <input
-              id = "password" 
-              type = "password" 
-              placeholder="Senha" 
-              className="text-lg text-gray-500 w-full p-1 pl-4 mb-4 bg-yellow-50 rounded-full hover:border-2 hover:border-grey">
-            </input>  
+            <PasswordField
+          className="flex items-center text-lg text-gray-500 w-full p-1 pl-4 mb-4 bg-yellow-50 rounded-full focus:border-2 focus:border-grey"
+          inputClass="flex-1 bg-yellow-50 focus:outline-none "
+          buttonClass="px-2"
+          />
           </div>
 
           <div className="w-full text-center pb-5">
             <a 
             href="INSIRA O LINK"
-            className="text-base text-center font-league font-extrathin underline"
+            className="text-base text-center font-league font-base underline"
             >Esqueceu sua senha?</a>
           </div>
 
