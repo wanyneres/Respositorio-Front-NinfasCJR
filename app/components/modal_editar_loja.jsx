@@ -35,7 +35,7 @@ export default function ModalEditarLoja({ Aberto, Fechado, Salvar, Deletar}) {
         <div>
             <div className="fixed inset-0 z-50 bg-black/50 flex flex-col justify-center items-center" onClick={Fechado}>
 
-                <div className="bg-gray-200 rounded-xl shadow-lg p-6 h-[890px] items-center flex flex-col w-full max-w-190" onClick={(e) => e.stopPropagation()}>
+                <div className="bg-gray-200 rounded-xl shadow-lg p-6 w-full max-w-2xl flex flex-col max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
 
                     <div className="relative mb-2 w-full">
                         <div type="text" className="text-[43px] text-center">Editar Loja</div>
@@ -44,7 +44,7 @@ export default function ModalEditarLoja({ Aberto, Fechado, Salvar, Deletar}) {
                         </button>
                     </div>
 
-                    <div className="h-[61px] rounded-full bg-white z-0 w-150 flex items-center px-7">
+                    <div className="h-[61px] rounded-full bg-white z-0 w-full mx-auto flex-none py-2 sm:max-w-[80vw] flex items-center px-7 flex-grow-0">
                         <input type="text" className="placeholder-gray-500 text-[20px] w-full bg-transparent focus:outline-none" placeholder="Nome da Loja"/>
                     </div>
 
@@ -88,12 +88,13 @@ export default function ModalEditarLoja({ Aberto, Fechado, Salvar, Deletar}) {
                     </div>
                     <input type="file" ref={inputArquivo} className="hidden" onChange={(e) => setBannerLoja(e.target.files[0])}></input>
 
+                    <div className="w-full flex justify-center">
+                    <button type="button" className="bg-[#FF0000] ml-3 text-white text-lg mt-7 w-150 h-[50px] rounded-full font-thin" onClick={handleDelete}>DELETAR</button>
+                    </div>
 
-                    <button type="button" className="bg-[#FF0000] text-white text-lg mt-7 w-150 h-[50px] rounded-full font-thin" onClick={handleDelete}>DELETAR</button>
-
-
-
+                    <div className="w-full flex justify-center">
                     <button type="button" className="bg-violet-600 text-yellow-50 mt-6 text-lg w-[324px] h-[50px] rounded-full font-thin" onClick={handleSubmit}>SALVAR</button>
+                    </div>
                 </div>
             </div>
         </div>
