@@ -3,22 +3,22 @@ import Image from "next/image";
 import { useState, useRef } from "react";
 import { CATEGORIAS_LOJA } from "../../contantes";
 
-export default function ModalEditarLoja({ Aberto, Fechado, Salvar, Deletar}) {
+export default function ModalEditarPerfil({ Aberto, Fechado, Salvar, Deletar}) {
 
     const [nomeLoja, setNomeLoja] = useState("");
     const [bannerLoja, setBannerLoja] = useState("");
     const [logoLoja, setLogoLoja] = useState("");
-    const [fotoPerfil, setFotoPerfil] = useState("");
+    const [fotoPerfilLoja, setFotoPerfilLoja] = useState("");
     const [categoria, setCategoria] = useState("");
 
-    const inputFotoPerfilRef = useRef(null);
+    const inputFotoPerfilLojaRef = useRef(null);
     const inputLogoRef = useRef(null);
     const inputBannerRef = useRef(null);
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const dados = {nome: nomeLoja, categoria: categoria, banner: bannerLoja, logo: logoLoja, foto: fotoPerfil};
+        const dados = {nome: nomeLoja, categoria: categoria, banner: bannerLoja, logo: logoLoja, foto: fotoPerfilLoja};
         Salvar(dados);
         Fechado();
     }
@@ -60,13 +60,13 @@ export default function ModalEditarLoja({ Aberto, Fechado, Salvar, Deletar}) {
                     </div>
                 </div>
 
-                <div className="mt-7 rounded-xl p-6 border-2 relative flex flex-col items-center border-dashed border-violet-600 h-[145px] w-full cursor-pointer" onClick={() => inputFotoPerfilRef.current.click()}>
+                <div className="mt-7 rounded-xl p-6 border-2 relative flex flex-col items-center border-dashed border-violet-600 h-[145px] w-full cursor-pointer" onClick={() => inputFotoPerfilLojaRef.current.click()}>
                     <div className="mt-5">
                         <Image src="/images/file.svg" alt="X" width={35} height={35}/>
                     </div>
                     <div type="text" className="text-[18px] mt-2 font-extralight text-center">Anexe a foto de perfil de sua loja</div>
                 </div>
-                <input type="file" ref={inputFotoPerfilRef} className="hidden" onChange={(e) => setFotoPerfil(e.target.files[0])}></input>
+                <input type="file" ref={inputFotoPerfilLojaRef} className="hidden" onChange={(e) => setFotoPerfilLoja(e.target.files[0])}></input>
 
                 <div className="mt-3 rounded-xl p-6 border-2 relative flex flex-col items-center border-dashed border-violet-600 h-[145px] w-full cursor-pointer" onClick={() => inputLogoRef.current.click()}>
                     <div className="mt-5">
