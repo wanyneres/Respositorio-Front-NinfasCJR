@@ -1,5 +1,4 @@
 "use client"
-import React, {useState} from "react";
 //Usado para o unuário escolher como a senha será mostrada
 import Image from 'next/image';
 import PasswordField from "@/components/PasswordField";
