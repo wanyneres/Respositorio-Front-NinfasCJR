@@ -31,7 +31,7 @@ export default function SignupPage() {
     <div className="min-h-screen bg-[#E8E4D9] flex items-center justify-center p-4">
       <div className="w-full max-w-6xl flex flex-col lg:flex-row items-center justify-between gap-8">
         
-        {/* Formulário */}
+        {/* lacunas para os dados pessoais */}
         <div className="w-full lg:w-1/2 max-w-md">
           <div className="bg-[#2B2B2B] rounded-3xl p-8 shadow-2xl">
             <h1 className="text-white text-3xl font-bold mb-8 text-center">
@@ -119,32 +119,24 @@ export default function SignupPage() {
           </div>
         </div>
         
-        {/* Lado direito - Logo e Personagem */}
+
         <div className="w-full lg:w-1/2 flex flex-col items-center justify-center space-y-8">
-          {/* Logo */}
+          {/* logo stock.io */}
           <div className="text-center mb-8">
-            <div className="relative inline-block">
-              <h1 className="text-7xl font-black text-black tracking-tight">
-                STOCK<span className="text-[#C5F542]">.IO</span>
-              </h1>
-              <div className="absolute -bottom-2 right-2 w-12 h-12 bg-[#C5F542] rounded-lg"></div>
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="Stock.io Logo" 
+              className="w-80 h-auto mx-auto"
+            />
           </div>
           
-          {/* Área para personagem */}
-          <div className="relative w-80 h-[500px] bg-gradient-to-br from-white/30 to-white/10 rounded-3xl border-4 border-dashed border-gray-400/50 flex items-center justify-center backdrop-blur-sm">
-            <div className="text-center text-gray-600 p-6">
-              <div className="mb-4">
-                <svg className="w-16 h-16 mx-auto text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <p className="text-base font-bold mb-2">Insira sua personagem PNG aqui</p>
-              <p className="text-sm text-gray-500">
-                Personagem verde com cabelo roxo<br />
-                fazendo sinal de paz ✌️
-              </p>
-            </div>
+          {/* bonequinha do stock.io */}
+          <div className="relative">
+            <img 
+              src="/mascote.png" 
+              alt="Personagem Stock.io" 
+              className="w-72 h-auto mx-auto"
+            />
           </div>
         </div>
         
