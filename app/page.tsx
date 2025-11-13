@@ -31,7 +31,7 @@ export default function SignupPage() {
     <div className="min-h-screen bg-[#E8E4D9] flex items-center justify-center p-4">
       <div className="w-full max-w-6xl flex flex-col lg:flex-row items-center justify-between gap-8">
         
-        {/* Formulário */}
+        {/* lacunas para os dados pessoais */}
         <div className="w-full lg:w-1/2 max-w-md">
           <div className="bg-[#2B2B2B] rounded-3xl p-8 shadow-2xl">
             <h1 className="text-white text-3xl font-bold mb-8 text-center">
@@ -119,9 +119,9 @@ export default function SignupPage() {
           </div>
         </div>
         
-        {/* Lado direito - Logo e Personagem */}
+
         <div className="w-full lg:w-1/2 flex flex-col items-center justify-center space-y-8">
-          {/* Logo */}
+          {/* logo stock.io */}
           <div className="text-center mb-8">
             <img 
               src="/logo.png" 
@@ -130,7 +130,7 @@ export default function SignupPage() {
             />
           </div>
           
-          {/* Personagem */}
+          {/* bonequinha do stock.io */}
           <div className="relative">
             <img 
               src="/mascote.png" 
