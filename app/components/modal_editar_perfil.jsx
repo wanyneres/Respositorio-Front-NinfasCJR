@@ -50,11 +50,11 @@ export default function ModalEditarPerfil({ Aberto, Fechado, Salvar, Deletar, Ab
                     <input type="text" className="placeholder-gray-500 text-[20px] h-[50px] sm:w-[320px] w-[200px] bg-transparent" placeholder="E-mail"/>
                 </div>
 
-                <button type="button" className="border-[#AF052A] border-2 bg-transparent text-[#AF052A] cursor-pointer hover:opacity-90 transition flex justify-center items-center flex-none text-lg mt-7 sm:w-[373px] w-[250px] h-[50px] rounded-full font-thin" onClick={handleDelete}>DELETAR</button>                
+                <button type="button" className="border-[#AF052A] border-2 bg-transparent text-[#AF052A] cursor-pointer hover:opacity-90 transition flex justify-center items-center flex-none text-lg mt-7 sm:w-[373px] w-[250px] h-[50px] rounded-full font-light" onClick={handleDelete}>DELETAR</button>                
                 
-                <button type="button" className="border-violet-600 border-2 text-violet-600  cursor-pointer hover:opacity-90 transition mt-4 text-lg h-[50px] w-[250px] flex justify-center items-center flex-none sm:w-[373px] rounded-full font-thin" onClick={() => { AbrirModalAlterarSenha() ; Fechado() }}>ALTERAR SENHA</button>
+                <button type="button" className="border-violet-600 border-2 text-violet-600  cursor-pointer hover:opacity-90 transition mt-4 text-lg h-[50px] w-[250px] flex justify-center items-center flex-none sm:w-[373px] rounded-full font-light" onClick={() => { AbrirModalAlterarSenha() ; Fechado() }}>ALTERAR SENHA</button>
 
-                <button type="button" className="bg-violet-600 text-yellow-50 mt-4 text-lg h-[50px] w-[250px] cursor-pointer hover:opacity-90 transition flex justify-center items-center flex-none sm:w-[373px] rounded-full font-thin" onClick={handleSubmit}>SALVAR</button>
+                <button type="button" className="bg-violet-600 text-yellow-50 mt-4 text-lg h-[50px] w-[250px] cursor-pointer hover:opacity-90 transition flex justify-center items-center flex-none sm:w-[373px] rounded-full font-light" onClick={handleSubmit}>SALVAR</button>
             </div>
         </div>
     );

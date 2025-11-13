@@ -6,7 +6,7 @@ import "./globals.css";
 const leagueSpartan = League_Spartan({
   variable: "--font-league-spartan",
   subsets: ["latin"],
-  weight: ["400", "800"]
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
 })
 
 const geistSans = Geist({

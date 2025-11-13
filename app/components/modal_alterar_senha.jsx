@@ -42,7 +42,7 @@ export default function ModalAlterarSenha ({ Aberto, Fechado, AbrirModalEditarPe
                     <input type="text" className="placeholder-gray-500 text-[20px] h-[50px] sm:w-[320px] w-[200px] bg-transparent" placeholder="Confirmar Senha"/>
                 </div>
 
-                <button type="button" className="bg-violet-600 cursor-pointer hover:opacity-90 transition text-yellow-50 mt-20 mb-15 text-lg h-[50px] w-[250px] flex justify-center items-center flex-none sm:w-[373px] rounded-full font-thin" onClick={handleSubmit}>SALVAR</button>
+                <button type="button" className="bg-violet-600 cursor-pointer hover:opacity-90 transition text-yellow-50 mt-20 mb-15 text-lg h-[50px] w-[250px] flex justify-center items-center flex-none sm:w-[373px] rounded-full font-light" onClick={handleSubmit}>SALVAR</button>
             </div>
         </div>
     );
