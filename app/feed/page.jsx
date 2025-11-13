@@ -27,7 +27,7 @@ const StockIOHomepage = () => {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Header */}
+      {/* header */}
       <header className="flex items-center justify-between px-6 py-4 bg-black">
         <div className="flex items-center gap-2">
           <svg width="140" height="28" viewBox="0 0 221 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +59,7 @@ const StockIOHomepage = () => {
               className="flex items-center gap-2 px-4 py-2 hover:bg-gray-800 rounded"
             >
               <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
-                <span className="text-white text-sm font-bold">U</span>
+                <span className="text-white text-sm font-bold">NF</span>
               </div>
             </button>
           ) : (
@@ -78,7 +78,7 @@ const StockIOHomepage = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* a sessão principal */}
       <section className="relative bg-black px-6 py-16 overflow-hidden">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="z-10 max-w-xl">
@@ -88,23 +88,18 @@ const StockIOHomepage = () => {
             </h2>
           </div>
           <div className="relative hidden md:block">
-            {/* Substitua 'personagem.png' pelo nome exato do seu arquivo */}
             <img 
               src="/personagem.png" 
               alt="Personagem Stock.io" 
               className="h-80 w-auto object-contain"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-                console.log('Imagem não encontrada. Verifique se o arquivo está em public/personagem.png');
-              }}
             />
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
+
       <main className="bg-white text-black rounded-t-3xl">
-        {/* Search Bar */}
+        {/* barra de pesquisa */}
         <div className="px-6 py-8">
           <div className="max-w-3xl mx-auto relative">
             <input
@@ -120,7 +115,7 @@ const StockIOHomepage = () => {
           </div>
         </div>
 
-        {/* Categories */}
+        {/* categoria */}
         <section className="px-6 py-8">
           <h3 className="text-2xl font-bold mb-6">Categoria</h3>
           <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
@@ -136,7 +131,7 @@ const StockIOHomepage = () => {
           </div>
         </section>
 
-        {/* Products */}
+        {/* produtos do site */}
         <section className="px-6 py-8">
           <div className="flex items-center justify-between mb-6">
             <h3 className="text-2xl font-bold">
