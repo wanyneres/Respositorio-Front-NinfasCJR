@@ -3,6 +3,7 @@ import { SlArrowLeft } from "react-icons/sl";
 import Navbar from '../components/navbar';
 import Image from 'next/image';
 import {Estrelas} from '../components/estrelas_estaticas'
+import HeaderAvaliacao from '../components/header_avaliacao'
 
 
 export default function avaliacoesComentarios(){
@@ -16,17 +17,11 @@ export default function avaliacoesComentarios(){
                         <SlArrowLeft size={24}></SlArrowLeft>
                     </button>
 
-                    <div className="w-12 h-12 rounded-full overflow-hidden">
-                        <Image width={128}
-                                height={128}
-                                src={"/images/teste.png"}
-                                alt={"Foto de perfil do usuário"}
-                                className="object-cover w-full h-full"></Image>
-                    </div>
-
-                    <p className="text-yellow-50 text-2xl ml-2 mr-2">Nome de usuário</p>
-
-                    <p className="text-yellow-50 font-light text-sm">1h</p>
+                    <HeaderAvaliacao 
+                        nome="Nome do usuário"
+                        imagem="/images/teste.png"
+                        horas={2}
+                    ></HeaderAvaliacao>
 
                     <div className="ml-auto mr-16">
                         <Estrelas rating={4}></Estrelas>
@@ -35,6 +30,7 @@ export default function avaliacoesComentarios(){
                 </div>
 
                 <p className="text-xl font-thin ml-20">Texto de avaliação. Aqui vai aparecer as informações que saem do back</p>
+            
             </div>
             <div className="bg-yellow-50 h-1/2">
 
